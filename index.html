@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Matadata demo</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "@atcute/jetstream": "./web_modules/@atcute/jetstream.js"
+      }
+    }
+    </script>
+    <template id="record-template">
+      <div class="record">
+        <img src="" alt="Thumbnail of satellite image">
+        <a href=""></a>
+      </div>
+    </template>
+  </head>
+  <body>
+    <script type="module" src="./src/web.js"></script>
+    <div class="records"></div>
+  </body>
+</html>

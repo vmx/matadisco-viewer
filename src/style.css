@@ -1,0 +1,27 @@
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #999;
+}
+
+body {
+  font-family: monospace, monospace;
+}
+
+.record {
+  float: left;
+  padding-bottom: 0.8em;
+  width: 343px;
+}
+
+.record img {
+  height: 343px;
+  width: 343px;
+}

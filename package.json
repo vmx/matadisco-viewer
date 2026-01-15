@@ -1,0 +1,22 @@
+{
+  "name": "matadata-viewer",
+  "version": "0.1.0",
+  "description": "View some metadata published on ATProto",
+  "author": "Volker Mische <volker.mische@gmail.com>",
+  "license": "Apache-2.0 OR MIT",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@atcute/jetstream": "^1.1.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2",
+    "@biomejs/biome": "^2.3.11"
+  },
+  "scripts": {
+    "fmt": "biome format --write",
+    "postinstall": "node ./scripts/web-modules.js",
+    "start": "node ./src/node.js",
+    "web-modules": "node ./scripts/web-modules.js"
+  }
+}
