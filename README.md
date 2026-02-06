@@ -1,19 +1,19 @@
-Matadata viewer
-===============
+Matadisco viewer
+================
 
 This is a viewer of metadata that was published on [ATProto]. The web viewer
-gets "matadata" records from the past few minutes from [Bluesky's Jetstream]
+gets Matadisco records from the past few minutes from [Bluesky's Jetstream]
 and then keeps updating.
 
 Currently the only publisher is the [sentinel-to-atproto] Cloudflare worker. So
 you'll see a lot of satellite images being displayed. It's planned that in the
-future there will also be other matadata records.
+future there will also be other Matadisco records.
 
 
 Demo
 ----
 
-See it in action at https://vmx.github.io/matadata-viewer/.
+See it in action at https://vmx.github.io/matadisco-viewer/.
 
 
 Running locally

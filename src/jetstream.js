@@ -3,7 +3,7 @@ import { JetstreamSubscription } from "@atcute/jetstream"
 export const startStream = (startTime) => {
   const subscription = new JetstreamSubscription({
     url: "wss://jetstream2.us-east.bsky.network",
-    wantedCollections: ["cx.vmx.dev.tmp001.matadata"],
+    wantedCollections: ["cx.vmx.dev.tmp001.matadisco"],
     cursor: startTime,
   })
   console.log(`current stream cursor is at ${subscription.cursor}`)
