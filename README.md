@@ -33,7 +33,7 @@ the Python built-in one:
 
 You can now access the viewer at
 
-    http://localhost:8000/
+    http://127.0.0.1:8000/
 
 
 ### CLI viewer
