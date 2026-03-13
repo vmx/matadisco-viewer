@@ -17,6 +17,7 @@ for await (const record of stream) {
     recordsElement.firstChild.nodeType === Node.TEXT_NODE
   ) {
     recordsElement.firstChild.remove()
+    recordsElement.classList.remove("loading-ellipsis")
   }
 
   console.log(JSON.stringify(record))
