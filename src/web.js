@@ -30,17 +30,22 @@ for await (const record of stream) {
   recordElement.querySelector("a").href = record.metadata
   recordElement.querySelector("a").textContent = record.metadata
 
-  // If the there is a preview and it's an image, show it.
-  if (
-    record.preview !== undefined &&
-    record.preview.mimeType.startsWith("image/")
-  ) {
-    const imageElement = document
-      .getElementById("record-template-preview-image")
-      .content.querySelector("img")
-      .cloneNode(true)
-    imageElement.src = record.preview.url
-    previewElement.prepend(imageElement)
+  if (record.preview !== undefined) {
+    if (record.preview.mimeType.startsWith("image/")) {
+      const imageElement = document
+        .getElementById("record-template-preview-image")
+        .content.querySelector("img")
+        .cloneNode(true)
+      imageElement.src = record.preview.url
+      previewElement.prepend(imageElement)
+    } else if (record.preview.mimeType.startsWith("text/plain")) {
+      const textElement = document
+        .getElementById("record-template-preview-text-plain")
+        .content.querySelector("div")
+        .cloneNode(true)
+      textElement.innerText = record.preview.data
+      previewElement.prepend(textElement)
+    }
   }
 
   recordsElement.prepend(recordElement)

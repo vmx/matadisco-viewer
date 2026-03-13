@@ -41,12 +41,23 @@ body {
 }
 
 .record {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
   float: left;
-  padding-bottom: 0.8em;
+  margin: 4px;
   width: 343px;
 }
 
-.record img {
+.record .preview {
+  padding-bottom: 0.3em;
+}
+
+.record img,
+.record .plaintext {
   height: 343px;
   width: 343px;
+}
+
+.record .plaintext {
+  overflow: hidden;
 }
