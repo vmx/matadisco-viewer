@@ -28,8 +28,8 @@ for await (const record of stream) {
   const previewElement = recordElement.querySelector("div.preview")
 
   // Each record contains a link to the metadata
-  recordElement.querySelector("a").href = record.metadata
-  recordElement.querySelector("a").textContent = record.metadata
+  recordElement.querySelector("a").href = record.resource
+  recordElement.querySelector("a").textContent = record.resource
 
   if (record.preview !== undefined) {
     if (record.preview.mimeType.startsWith("image/")) {
